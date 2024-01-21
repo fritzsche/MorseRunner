@@ -7,98 +7,102 @@
       <Unit>
         <Filename Value="MorseRunner.lpr"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="11"/>
-        <CursorPos X="34" Y="19"/>
-        <UsageCount Value="189"/>
+        <EditorIndex Value="13"/>
+        <CursorPos X="40" Y="42"/>
+        <UsageCount Value="192"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="Main.pas"/>
         <IsPartOfProject Value="True"/>
+        <ComponentName Value="MainForm"/>
         <HasResources Value="True"/>
-        <EditorIndex Value="3"/>
-        <TopLine Value="293"/>
-        <CursorPos Y="324"/>
-        <UsageCount Value="189"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="706"/>
+        <CursorPos X="3" Y="708"/>
+        <UsageCount Value="192"/>
         <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="Contest.pas"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="6"/>
+        <EditorIndex Value="9"/>
         <TopLine Value="167"/>
         <CursorPos Y="188"/>
-        <UsageCount Value="189"/>
+        <UsageCount Value="192"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="RndFunc.pas"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="7"/>
+        <EditorIndex Value="10"/>
         <TopLine Value="32"/>
         <CursorPos X="22" Y="61"/>
-        <UsageCount Value="189"/>
+        <UsageCount Value="192"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="Ini.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
-        <UsageCount Value="189"/>
+        <UsageCount Value="192"/>
       </Unit>
       <Unit>
         <Filename Value="Station.pas"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="8"/>
+        <EditorIndex Value="11"/>
         <TopLine Value="153"/>
         <CursorPos Y="194"/>
-        <UsageCount Value="189"/>
+        <UsageCount Value="192"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="VCL/MorseKey.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
-        <UsageCount Value="189"/>
+        <UsageCount Value="192"/>
       </Unit>
       <Unit>
         <Filename Value="StnColl.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
-        <UsageCount Value="189"/>
+        <UsageCount Value="192"/>
       </Unit>
       <Unit>
         <Filename Value="DxStn.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
-        <UsageCount Value="189"/>
+        <UsageCount Value="192"/>
       </Unit>
       <Unit>
         <Filename Value="MyStn.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
-        <UsageCount Value="189"/>
+        <UsageCount Value="192"/>
       </Unit>
       <Unit>
         <Filename Value="CallLst.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
-        <UsageCount Value="189"/>
+        <UsageCount Value="192"/>
       </Unit>
       <Unit>
         <Filename Value="QrmStn.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="55" Y="13"/>
-        <UsageCount Value="189"/>
+        <UsageCount Value="192"/>
       </Unit>
       <Unit>
         <Filename Value="Log.pas"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="13"/>
-        <TopLine Value="280"/>
-        <CursorPos X="5" Y="299"/>
-        <UsageCount Value="189"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="15"/>
+        <TopLine Value="82"/>
+        <CursorPos Y="110"/>
+        <UsageCount Value="192"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -106,14 +110,14 @@
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="14" Y="13"/>
-        <UsageCount Value="189"/>
+        <UsageCount Value="192"/>
       </Unit>
       <Unit>
         <Filename Value="DxOper.pas"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="4"/>
+        <EditorIndex Value="7"/>
         <CursorPos X="4" Y="39"/>
-        <UsageCount Value="189"/>
+        <UsageCount Value="192"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -121,15 +125,17 @@
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="55" Y="13"/>
-        <UsageCount Value="189"/>
+        <UsageCount Value="192"/>
       </Unit>
       <Unit>
         <Filename Value="ScoreDlg.pas"/>
         <IsPartOfProject Value="True"/>
+        <ComponentName Value="ScoreDialog"/>
         <HasResources Value="True"/>
-        <EditorIndex Value="12"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="14"/>
         <CursorPos X="22" Y="21"/>
-        <UsageCount Value="189"/>
+        <UsageCount Value="192"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -137,7 +143,7 @@
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="21" Y="13"/>
-        <UsageCount Value="189"/>
+        <UsageCount Value="192"/>
       </Unit>
       <Unit>
         <Filename Value="VCL/PermHint.pas"/>
@@ -145,20 +151,20 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="100"/>
         <CursorPos Y="134"/>
-        <UsageCount Value="189"/>
+        <UsageCount Value="192"/>
       </Unit>
       <Unit>
         <Filename Value="VCL/Crc32.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
-        <UsageCount Value="189"/>
+        <UsageCount Value="192"/>
       </Unit>
       <Unit>
         <Filename Value="VCL/SndCustm.pas"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="1"/>
+        <EditorIndex Value="2"/>
         <CursorPos X="35" Y="14"/>
-        <UsageCount Value="189"/>
+        <UsageCount Value="192"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -167,73 +173,75 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="41"/>
         <CursorPos X="12" Y="53"/>
-        <UsageCount Value="189"/>
+        <UsageCount Value="192"/>
       </Unit>
       <Unit>
         <Filename Value="VCL/SndOut.pas"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="2"/>
+        <EditorIndex Value="3"/>
         <TopLine Value="8"/>
         <CursorPos X="22" Y="67"/>
-        <UsageCount Value="189"/>
+        <UsageCount Value="192"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="VCL/MorseTbl.pas"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="5"/>
+        <EditorIndex Value="8"/>
         <TopLine Value="6"/>
-        <UsageCount Value="189"/>
+        <UsageCount Value="192"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="VCL/QuickAvg.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
-        <UsageCount Value="189"/>
+        <UsageCount Value="192"/>
       </Unit>
       <Unit>
         <Filename Value="VCL/MovAvg.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
-        <UsageCount Value="189"/>
+        <UsageCount Value="192"/>
       </Unit>
       <Unit>
         <Filename Value="VCL/Mixers.pas"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="9"/>
+        <EditorIndex Value="12"/>
         <TopLine Value="222"/>
         <CursorPos Y="254"/>
-        <UsageCount Value="189"/>
+        <UsageCount Value="192"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="VCL/VolumCtl.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
-        <UsageCount Value="189"/>
+        <UsageCount Value="192"/>
       </Unit>
       <Unit>
         <Filename Value="VCL/VolmSldr.pas"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="-1"/>
-        <UsageCount Value="189"/>
+        <EditorIndex Value="6"/>
+        <TopLine Value="128"/>
+        <CursorPos Y="156"/>
+        <UsageCount Value="192"/>
+        <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="VCL/WavFile.pas"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="10"/>
-        <CursorPos X="75" Y="21"/>
-        <UsageCount Value="189"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="606"/>
+        <CursorPos X="12" Y="654"/>
+        <UsageCount Value="192"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="Main.lfm"/>
         <HasResources Value="True"/>
-        <IsVisibleTab Value="True"/>
-        <TopLine Value="1220"/>
-        <CursorPos X="48" Y="1261"/>
-        <UsageCount Value="92"/>
+        <CursorPos X="5" Y="2"/>
+        <UsageCount Value="93"/>
         <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="LFM"/>
       </Unit>
@@ -259,18 +267,18 @@
       <Unit>
         <Filename Value="/Applications/Lazarus/lcl/interfaces/cocoa/interfaces.pas"/>
         <UnitName Value="Interfaces"/>
-        <EditorIndex Value="14"/>
+        <EditorIndex Value="16"/>
         <CursorPos X="18" Y="30"/>
-        <UsageCount Value="51"/>
+        <UsageCount Value="52"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="/Applications/Lazarus/lcl/interfaces/cocoa/cocoawsmenus.pas"/>
         <UnitName Value="CocoaWSMenus"/>
-        <EditorIndex Value="15"/>
+        <EditorIndex Value="17"/>
         <TopLine Value="43"/>
         <CursorPos X="70" Y="71"/>
-        <UsageCount Value="51"/>
+        <UsageCount Value="52"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -288,52 +296,18 @@
         <CursorPos X="23" Y="339"/>
         <UsageCount Value="4"/>
       </Unit>
+      <Unit>
+        <Filename Value="ScoreDlg.lfm"/>
+        <HasResources Value="True"/>
+        <EditorIndex Value="5"/>
+        <TopLine Value="37"/>
+        <CursorPos X="23" Y="37"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit>
     </Units>
-    <JumpHistory HistoryIndex="29">
-      <Position>
-        <Filename Value="Main.pas"/>
-        <Caret Line="324" TopLine="293"/>
-      </Position>
-      <Position>
-        <Filename Value="VCL/SndCustm.pas"/>
-        <Caret Line="255" TopLine="230"/>
-      </Position>
-      <Position>
-        <Filename Value="VCL/SndCustm.pas"/>
-        <Caret Line="364" Column="82" TopLine="351"/>
-      </Position>
-      <Position>
-        <Filename Value="VCL/SndCustm.pas"/>
-        <Caret Line="450" TopLine="422"/>
-      </Position>
-      <Position>
-        <Filename Value="VCL/SndCustm.pas"/>
-        <Caret Line="364" TopLine="336"/>
-      </Position>
-      <Position>
-        <Filename Value="VCL/SndCustm.pas"/>
-        <Caret Line="450" TopLine="422"/>
-      </Position>
-      <Position>
-        <Filename Value="VCL/SndCustm.pas"/>
-        <Caret Line="364" Column="73" TopLine="336"/>
-      </Position>
-      <Position>
-        <Filename Value="VCL/SndCustm.pas"/>
-        <Caret Line="365" TopLine="336"/>
-      </Position>
-      <Position>
-        <Filename Value="VCL/SndCustm.pas"/>
-        <Caret Line="364" TopLine="336"/>
-      </Position>
-      <Position>
-        <Filename Value="VCL/SndCustm.pas"/>
-        <Caret Line="367" TopLine="336"/>
-      </Position>
-      <Position>
-        <Filename Value="VCL/SndCustm.pas"/>
-        <Caret Line="364" Column="76" TopLine="345"/>
-      </Position>
+    <JumpHistory HistoryIndex="27">
       <Position>
         <Filename Value="VCL/SndCustm.pas"/>
         <Caret Line="137" Column="31" TopLine="118"/>
@@ -409,6 +383,42 @@
       <Position>
         <Filename Value="VCL/SndCustm.pas"/>
         <Caret Line="236" Column="65" TopLine="108"/>
+      </Position>
+      <Position>
+        <Filename Value="Main.lfm"/>
+        <Caret Line="1410"/>
+      </Position>
+      <Position>
+        <Filename Value="Main.lfm"/>
+        <Caret Line="752" TopLine="736"/>
+      </Position>
+      <Position>
+        <Filename Value="Main.pas"/>
+        <Caret Line="309" Column="3"/>
+      </Position>
+      <Position>
+        <Filename Value="Main.pas"/>
+        <Caret Line="18" Column="33"/>
+      </Position>
+      <Position>
+        <Filename Value="Main.pas"/>
+        <Caret Line="298" Column="27" TopLine="274"/>
+      </Position>
+      <Position>
+        <Filename Value="Main.pas"/>
+        <Caret Line="297" Column="8" TopLine="267"/>
+      </Position>
+      <Position>
+        <Filename Value="Main.pas"/>
+        <Caret Line="298" Column="46" TopLine="267"/>
+      </Position>
+      <Position>
+        <Filename Value="Main.pas"/>
+        <Caret Line="302" Column="46" TopLine="271"/>
+      </Position>
+      <Position>
+        <Filename Value="Main.pas"/>
+        <Caret Line="708" Column="3" TopLine="706"/>
       </Position>
     </JumpHistory>
     <RunParams>

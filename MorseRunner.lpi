@@ -36,7 +36,9 @@
       <Unit>
         <Filename Value="Main.pas"/>
         <IsPartOfProject Value="True"/>
+        <ComponentName Value="MainForm"/>
         <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
       </Unit>
       <Unit>
         <Filename Value="Contest.pas"/>
@@ -97,7 +99,9 @@
       <Unit>
         <Filename Value="ScoreDlg.pas"/>
         <IsPartOfProject Value="True"/>
+        <ComponentName Value="ScoreDialog"/>
         <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
       </Unit>
       <Unit>
         <Filename Value="VCL/BaseComp.pas"/>

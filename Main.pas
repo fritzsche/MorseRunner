@@ -20,8 +20,12 @@ const
   WM_TBDOWN = WM_USER+1;
 
 type
+
+  { TMainForm }
+
   TMainForm = class(TForm)
     AlSoundOut1: TAlSoundOut;
+    Label17: TLabel;
     MainMenu1: TMainMenu;
     File1: TMenuItem;
     Send1: TMenuItem;
@@ -291,6 +295,54 @@ uses ScoreDlg;
 
 procedure TMainForm.FormCreate(Sender: TObject);
 begin
+
+// Lazarus does not allow to simple register controls.
+// We just load the controls manual.
+
+  //object AlSoundOut1: TAlSoundOut
+  //  SamplesPerSec = 11025
+  //  BufCount = 8
+  //  OnBufAvailable = AlSoundOut1BufAvailable
+  //  Left = 384
+  //  Top = 148
+  //end
+
+  AlSoundOut1 :=  TAlSoundOut.Create(self);
+  AlSoundOut1.SamplesPerSec := 11025;
+  AlSoundOut1.BufCount := 8;
+  AlSoundOut1.OnBufAvailable := AlSoundOut1BufAvailable;
+
+  //object VolumeSlider1: TVolumeSlider
+  //  Left = 87
+  //  Top = 118
+  //  Width = 60
+  //  Height = 20
+  //  Hint = '-15.0 dB'
+  //  ShowHint = True
+  //  Margin = 5
+  //  Value = 0.75
+  //  Overloaded = False
+  //  OnChange = VolumeSlider1Change
+  //  OnDblClick = VolumeSliderDblClick
+  //  DbScale = 60
+  //  Db = -15
+  //end
+
+  VolumeSlider1:= TVolumeSlider.Create(self);
+  VolumeSlider1.Value := 0.75;
+  VolumeSlider1.OnChange := VolumeSlider1Change;
+  VolumeSlider1.DbScale := 60;
+  VolumeSlider1.Db := -15;
+  //object AlWavFile1: TAlWavFile
+  //  Left = 384
+  //  Top = 204
+  //end
+
+  AlWavFile1 := TAlWavFile.Create(self);
+
+
+
+
   Randomize;
   Tst := TContest.Create;
   LoadCallList;
@@ -304,6 +356,9 @@ begin
 
   Panel2.DoubleBuffered := true;
   RichEdit1.Align := alClient;
+
+
+
 end;
 
 
