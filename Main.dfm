@@ -387,7 +387,7 @@ object MainForm: TMainForm
       Top = 60
       Width = 310
       Height = 40
-      Caption = 'Morse Runner 1.68'
+      Caption = 'Mac Morse Runner 0.0'
       Font.Charset = ANSI_CHARSET
       Font.Color = 12369084
       Font.Height = -35
@@ -401,7 +401,7 @@ object MainForm: TMainForm
       Top = 56
       Width = 310
       Height = 40
-      Caption = 'Morse Runner 1.68'
+      Caption = 'Mac Morse Runner 0.9'
       Font.Charset = ANSI_CHARSET
       Font.Color = clAqua
       Font.Height = -35
@@ -415,7 +415,7 @@ object MainForm: TMainForm
       Top = 55
       Width = 310
       Height = 40
-      Caption = 'Morse Runner 1.68'
+      Caption = 'Mac Morse Runner 0.9'
       Font.Charset = ANSI_CHARSET
       Font.Color = clGreen
       Font.Height = -35
@@ -429,7 +429,7 @@ object MainForm: TMainForm
       Top = 108
       Width = 245
       Height = 13
-      Caption = 'Copyright © 2004-2006 Alex Shovkoplyas, VE3NEA'
+      Caption = 'Copyright ï¿½ 2004-2006 Alex Shovkoplyas, VE3NEA'
       Transparent = True
     end
     object Label16: TLabel
@@ -628,7 +628,7 @@ object MainForm: TMainForm
         TabStop = False
         CharCase = ecUpperCase
         TabOrder = 0
-        Text = 'VE3NEA'
+        Text = 'DJ1TF'
         OnChange = Edit4Change
       end
       object SpinEdit1: TSpinEdit

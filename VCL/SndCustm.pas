@@ -11,7 +11,7 @@ interface
 
 uses
   LCLIntf, LCLType, LMessages, Messages, SysUtils, Classes, Forms, SyncObjs, SndTypes,
-  Ini, MorseKey, Contest, sdl;
+  Ini, MorseKey, Contest, ctypes, portaudio;
 
 type
   TCustomSoundInOut = class;
@@ -47,7 +47,10 @@ type
     FBufsAdded: LongWord;
     FBufsDone: LongWord;
     nSamplesPerSec: LongWord;
-    
+
+     Stream : PPaStream;
+
+
     procedure Loaded; override;
     procedure Err(Txt: string);
     function GetThreadID: THandle;
@@ -70,42 +73,46 @@ type
 
 var
   SndObj : TCustomSoundInOut;
-    
+
+const FramesPerBuffer = 512;
+
+ var
+ OutputParameters : TPaStreamParameters;
+
+
+
+
 implementation
 
 
-procedure BufferDoneSDL(userdata : Pointer; stream : PUInt8; len : LongInt); cdecl;
+function PaCallback(
+      input: Pointer;
+      output: Pointer;
+      frameCount: culong;
+      timeInfo: PPaStreamCallbackTimeInfo;
+      statusFlags: TPaStreamCallbackFlags;
+      userData: Pointer ): cint; cdecl;
 var
-   i : Integer;
-   p : PUInt8Array;
+  OutBuffer : pcint16;
+  i : culong;
+//  LocalDataPointer : PPaUserData;
 begin
-  // WARNING: This is executed in the audio thread kicked off by SDL_OpenAudio
-  // Copy the buffer out, mark it as empty, and let the fill thread (FThread)
-  // trigger the refilling in the main thread. Otherwise .. random death (SEGV).
+  OutBuffer := pcint16(output);
 
-  p := PUInt8Array(stream);
-
-   //Writeln('used ', SndObj.Buffers[0].used);
-
-  // The generator code sometimes gives us wrongly-sized buffers, also check for valid buffer
-  if (SndObj.Buffers[0].used = 1) and (len = (2 * SndObj.Buffers[0].len)) then
-    for i := 0 to (len div 2)-1 do
-    begin
-      p[2*i] := SndObj.Buffers[0].Data[i] and $ff;
-      p[(2*i)+1] := SndObj.Buffers[0].Data[i] shr 8;
-    end
+  if (SndObj.Buffers[0].used = 1) and (frameCount =  SndObj.Buffers[0].len) then
+        for i := 0 to frameCount-1 do
+        begin
+           OutBuffer[i] := SndObj.Buffers[0].Data[i];
+        end
   else
-    begin
-      Writeln('BufferDone used ', SndObj.Buffers[0].used, ', len ', len, ', 2 * Buffers[0].len = ', 2 * SndObj.Buffers[0].len);
-      for i := 0 to len do
       begin
-	p[i] := 0; // Silence
+        for i := 0 to frameCount-1 do
+        begin
+  	OutBuffer[i] := 0; // Silence
+        end;
       end;
-    end;
-
-  // Mark buffer ready for re-fill
-  SndObj.Buffers[0].used := 0;
-  
+    SndObj.Buffers[0].used := 0;
+    PaCallback := paContinue;
 end;
 
 
@@ -129,9 +136,7 @@ procedure TWaitThread.ProcessEvent;
 begin
   if (Owner.Buffers[0].used = 0) then
     begin
-      //Writeln('Fill buffer');
       Owner.BufferDone(@Owner.Buffers[0]);
-      //Writeln('Did it fill? ', Owner.Buffers[0].used);
     end;
 end;
 
@@ -147,13 +152,11 @@ begin
   SetBufCount(DEFAULTBUFCOUNT);
   Writeln('Buffers ', GetBufCount());
 
-  if SDL_Init(SDL_INIT_AUDIO) < 0 then
-     begin
-	Writeln('SDL_Init failed.');
+  if Pa_Initialize() <> paNoError then
+    begin
+
 	Exit;
      end;
-
-   Writeln('SDL_Init OK');
    
   //FDeviceID := WAVE_MAPPER;
 
@@ -216,37 +219,26 @@ end;
 
 procedure TCustomSoundInOut.DoSetEnabled(AEnabled: boolean);
 var
-   des, got	    : PSDL_AudioSpec;
-   err		    : String;
+  PaErr : TPaError;
 begin
    if AEnabled then
      begin
+        OutputParameters.Device := Pa_GetDefaultOutputDevice;
+        OutputParameters.ChannelCount := CInt32(1);
+        OutputParameters.SampleFormat := paInt16;
+        OutputParameters.SuggestedLatency :=
+          (Pa_GetDeviceInfo(OutputParameters.device)^.defaultLowOutputLatency)*1;
+        OutputParameters.HostApiSpecificStreamInfo := nil;
 
-	SDL_CloseAudio();
+        // TODO: Check Error
+        PaErr := Pa_OpenStream( Stream, nil, @OutputParameters, nSamplesPerSec,
+          FramesPerBuffer, paClipOff, PPaStreamCallback(@PaCallback),
+         nil);
+        if PaErr <> paNoError then Err('Can not open port audio stream.');
+        PaErr := Pa_StartStream( Stream );
+        if PaErr <> paNoError then Err('Can not start port audio steam.');
 
-	des := New(PSDL_AudioSpec);
-	got := New(PSDL_AudioSpec);
-	with des^ do
-	begin
-	   freq := nSamplesPerSec;
-	   format := AUDIO_S16LSB;
-	   channels := 1;
-	   samples := 512; // Linux gives us 256. At 128, audio is choppy. < 128 sounds bad.
-	   callback := @BufferDoneSDL;
-	   userdata := nil;
-	end;
-
-	if SDL_OpenAudio(des, got) < 0 then
-	begin
-	   err := SDL_GetError();
-	   WriteLn('OpenAudio failed: ', err);
-	   Exit;
-	end;
-
-	WriteLn('OpenAudio got ', got^.freq, ' ', got^.format, ' ', got^.channels, ' ', got^.samples);
-	// Gah. So, this is terribly dirty.. but it fixes the Linux problem right now
-	// FIXME
-	Ini.BufSize := got^.samples;
+	Ini.BufSize := FramesPerBuffer;//Ini.BufSize;//FramesPerBuffer;  //got^.samples;
 	Keyer.BufSize := Ini.BufSize;
 	Tst.Filt.SamplesInInput := Ini.BufSize;
 	Tst.Filt2.SamplesInInput := Ini.BufSize;

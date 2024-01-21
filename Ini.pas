@@ -27,7 +27,7 @@ type
   TRunMode = (rmStop, rmPileup, rmSingle, rmWpx, rmHst);
   
 var
-  Call: string = 'VE3NEA';
+  Call: string = 'DJ1TF';
   HamName: string;
   Wpm: integer = 30;
   BandWidth: integer = 500;

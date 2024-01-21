@@ -14,7 +14,7 @@ uses
   Buttons, SndCustm, SndOut, Contest, Ini, MorseKey, CallLst,
   VolmSldr, VolumCtl, StdCtrls, Station, Menus, ExtCtrls, Log, MAth,
   ComCtrls, Spin, SndTypes, ToolWin, ImgList, Crc32,
-  WavFile, IniFiles, sdl;
+  WavFile, IniFiles, portaudio;
 
 const
   WM_TBDOWN = WM_USER+1;
@@ -614,6 +614,9 @@ procedure TMainForm.FormClose(Sender: TObject; var Action: TCloseAction);
 begin
   AlSoundOut1.Enabled := false;
   if AlWavFile1.IsOpen then AlWavFile1.Close;
+  // MacOS does not stop program
+  // Need to halt it.
+  Halt;
 end;
 
 procedure TMainForm.SpinEdit1Change(Sender: TObject);
@@ -683,9 +686,10 @@ const
   Msg = 'CW CONTEST SIMULATOR'#13#13 +
         'Copyright (c) 2004-2006 Alex Shovkoplyas, VE3NEA'#13#13 +
         'Portions Copyright (c) 2022 Zach Metzinger, N0ZGO'#13#13 +
-        've3nea@dxatlas.com, n0zgo@pobox.com'#13;
+        'Mac Port Copyright (c) 2024 Thomas Fritzsche, DJ1TF'#13#13 +
+        've3nea@dxatlas.com, n0zgo@pobox.com,tf@noto.de'#13;
 begin
-  Application.MessageBox(Msg, 'Morse Runner 1.68z', MB_OK or MB_ICONINFORMATION);
+  Application.MessageBox(Msg, 'Mac Morse Runner 0.9', MB_OK or MB_ICONINFORMATION);
 end;          
 
 

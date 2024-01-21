@@ -1,9 +1,15 @@
 program MorseRunner;
 
-{$MODE Delphi}
+//{$MODE Delphi}
+{$mode objfpc}{$H+}
 
 uses
+  {$IFDEF UNIX}
   cthreads,
+  {$ENDIF}
+  {$IFDEF HASAMIGA}
+  athreads,
+  {$ENDIF}
   Forms, Interfaces,
   Main in 'Main.pas' {MainForm},
   Contest in 'Contest.pas',
@@ -38,6 +44,8 @@ uses
 {$R *.res}
 
 begin
+
+  Application.Scaled:=True;
   Application.Initialize;
   Application.Title := 'Morse Runner';
   Application.CreateForm(TMainForm, MainForm);

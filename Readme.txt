@@ -1,4 +1,4 @@
-                              MORSE RUNNER  1.68z
+                              MAC MORSE RUNNER  0.9
 
                               Contest Simulator
 
@@ -220,6 +220,9 @@ command.
 
 VERSION HISTORY
 
+0.9
+  - Mac Port using Lazarus 
+  - Audio via Port Audio
 
 1.68
   - TU + MyCall after the QSO is now equivalent to CQ

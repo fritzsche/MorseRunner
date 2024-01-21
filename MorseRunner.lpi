@@ -11,7 +11,6 @@
       </Flags>
       <SessionStorage Value="InProjectDir"/>
       <Title Value="MorseRunner"/>
-      <UseAppBundle Value="False"/>
       <ResourceType Value="res"/>
     </General>
     <BuildModes>
@@ -157,16 +156,20 @@
   <CompilerOptions>
     <Version Value="11"/>
     <SearchPaths>
-      <IncludeFiles Value="VCL"/>
+      <IncludeFiles Value="VCL;$(ProjOutDir)"/>
+      <Libraries Value="/usr/local/Cellar/portaudio/19.7.0/lib/"/>
       <OtherUnitFiles Value="VCL"/>
       <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)"/>
     </SearchPaths>
     <Parsing>
       <SyntaxOptions>
-        <SyntaxMode Value="delphi"/>
+        <SyntaxMode Value="fpc"/>
       </SyntaxOptions>
     </Parsing>
     <Linking>
+      <Debugging>
+        <DebugInfoType Value="dsDwarf3"/>
+      </Debugging>
       <Options>
         <Win32>
           <GraphicApplication Value="True"/>
@@ -174,7 +177,9 @@
       </Options>
     </Linking>
     <Other>
-      <CustomOptions Value="-dBorland -dVer150 -dDelphi7 -dCompiler6_Up -dPUREPASCAL"/>
+      <Verbosity>
+        <ShoLineNum Value="True"/>
+      </Verbosity>
     </Other>
   </CompilerOptions>
   <Debugging>

@@ -3,3 +3,4 @@ lib
 *.o
 sdl_example/example
 *.core
+.DS_STORE

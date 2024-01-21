@@ -110,7 +110,7 @@ begin
   //minimize audio output delay
   SetLength(Result, 1);
   Inc(BlockNumber);
-  if BlockNumber < 6 then Exit;
+  if BlockNumber < 6 then Exit;  
 
   //complex noise
   SetLengthReIm(ReIm, Ini.BufSize);

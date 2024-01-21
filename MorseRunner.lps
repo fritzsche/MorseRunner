@@ -7,130 +7,137 @@
       <Unit>
         <Filename Value="MorseRunner.lpr"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="10"/>
-        <UsageCount Value="23"/>
-        <DefaultSyntaxHighlighter Value="Delphi"/>
+        <EditorIndex Value="11"/>
+        <CursorPos X="34" Y="19"/>
+        <UsageCount Value="189"/>
+        <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="Main.pas"/>
         <IsPartOfProject Value="True"/>
         <HasResources Value="True"/>
-        <EditorIndex Value="-1"/>
-        <CursorPos X="3" Y="860"/>
-        <UsageCount Value="23"/>
-        <DefaultSyntaxHighlighter Value="Delphi"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="293"/>
+        <CursorPos Y="324"/>
+        <UsageCount Value="189"/>
+        <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="Contest.pas"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="-1"/>
-        <UsageCount Value="23"/>
+        <EditorIndex Value="6"/>
+        <TopLine Value="167"/>
+        <CursorPos Y="188"/>
+        <UsageCount Value="189"/>
+        <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="RndFunc.pas"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="-1"/>
-        <UsageCount Value="23"/>
+        <EditorIndex Value="7"/>
+        <TopLine Value="32"/>
+        <CursorPos X="22" Y="61"/>
+        <UsageCount Value="189"/>
+        <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="Ini.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
-        <UsageCount Value="23"/>
+        <UsageCount Value="189"/>
       </Unit>
       <Unit>
         <Filename Value="Station.pas"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="-1"/>
-        <UsageCount Value="23"/>
+        <EditorIndex Value="8"/>
+        <TopLine Value="153"/>
+        <CursorPos Y="194"/>
+        <UsageCount Value="189"/>
+        <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="VCL/MorseKey.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
-        <UsageCount Value="23"/>
-        <DefaultSyntaxHighlighter Value="Delphi"/>
+        <UsageCount Value="189"/>
       </Unit>
       <Unit>
         <Filename Value="StnColl.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
-        <UsageCount Value="23"/>
+        <UsageCount Value="189"/>
       </Unit>
       <Unit>
         <Filename Value="DxStn.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
-        <UsageCount Value="23"/>
+        <UsageCount Value="189"/>
       </Unit>
       <Unit>
         <Filename Value="MyStn.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
-        <UsageCount Value="23"/>
+        <UsageCount Value="189"/>
       </Unit>
       <Unit>
         <Filename Value="CallLst.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
-        <UsageCount Value="23"/>
+        <UsageCount Value="189"/>
       </Unit>
       <Unit>
         <Filename Value="QrmStn.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="55" Y="13"/>
-        <UsageCount Value="23"/>
-        <DefaultSyntaxHighlighter Value="Delphi"/>
+        <UsageCount Value="189"/>
       </Unit>
       <Unit>
         <Filename Value="Log.pas"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="118"/>
-        <CursorPos Y="152"/>
-        <UsageCount Value="23"/>
-        <DefaultSyntaxHighlighter Value="Delphi"/>
+        <EditorIndex Value="13"/>
+        <TopLine Value="280"/>
+        <CursorPos X="5" Y="299"/>
+        <UsageCount Value="189"/>
+        <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="Qsb.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="14" Y="13"/>
-        <UsageCount Value="23"/>
-        <DefaultSyntaxHighlighter Value="Delphi"/>
+        <UsageCount Value="189"/>
       </Unit>
       <Unit>
         <Filename Value="DxOper.pas"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="-1"/>
-        <UsageCount Value="23"/>
+        <EditorIndex Value="4"/>
+        <CursorPos X="4" Y="39"/>
+        <UsageCount Value="189"/>
+        <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="QrnStn.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="55" Y="13"/>
-        <UsageCount Value="23"/>
-        <DefaultSyntaxHighlighter Value="Delphi"/>
+        <UsageCount Value="189"/>
       </Unit>
       <Unit>
         <Filename Value="ScoreDlg.pas"/>
         <IsPartOfProject Value="True"/>
         <HasResources Value="True"/>
-        <EditorIndex Value="-1"/>
-        <UsageCount Value="23"/>
-        <DefaultSyntaxHighlighter Value="Delphi"/>
+        <EditorIndex Value="12"/>
+        <CursorPos X="22" Y="21"/>
+        <UsageCount Value="189"/>
+        <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="VCL/BaseComp.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
-        <TopLine Value="60"/>
-        <CursorPos Y="84"/>
-        <UsageCount Value="23"/>
-        <DefaultSyntaxHighlighter Value="Delphi"/>
+        <CursorPos X="21" Y="13"/>
+        <UsageCount Value="189"/>
       </Unit>
       <Unit>
         <Filename Value="VCL/PermHint.pas"/>
@@ -138,26 +145,21 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="100"/>
         <CursorPos Y="134"/>
-        <UsageCount Value="23"/>
-        <DefaultSyntaxHighlighter Value="Delphi"/>
+        <UsageCount Value="189"/>
       </Unit>
       <Unit>
         <Filename Value="VCL/Crc32.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
-        <UsageCount Value="23"/>
-        <DefaultSyntaxHighlighter Value="Delphi"/>
+        <UsageCount Value="189"/>
       </Unit>
       <Unit>
         <Filename Value="VCL/SndCustm.pas"/>
         <IsPartOfProject Value="True"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="55"/>
-        <CursorPos X="10" Y="86"/>
-        <UsageCount Value="23"/>
+        <CursorPos X="35" Y="14"/>
+        <UsageCount Value="189"/>
         <Loaded Value="True"/>
-        <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit>
       <Unit>
         <Filename Value="VCL/SndTypes.pas"/>
@@ -165,87 +167,282 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="41"/>
         <CursorPos X="12" Y="53"/>
-        <UsageCount Value="23"/>
-        <DefaultSyntaxHighlighter Value="Delphi"/>
+        <UsageCount Value="189"/>
       </Unit>
       <Unit>
         <Filename Value="VCL/SndOut.pas"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="169"/>
-        <CursorPos Y="195"/>
-        <UsageCount Value="23"/>
-        <DefaultSyntaxHighlighter Value="Delphi"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="8"/>
+        <CursorPos X="22" Y="67"/>
+        <UsageCount Value="189"/>
+        <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="VCL/MorseTbl.pas"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="-1"/>
-        <UsageCount Value="23"/>
+        <EditorIndex Value="5"/>
+        <TopLine Value="6"/>
+        <UsageCount Value="189"/>
+        <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="VCL/QuickAvg.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
-        <UsageCount Value="23"/>
+        <UsageCount Value="189"/>
       </Unit>
       <Unit>
         <Filename Value="VCL/MovAvg.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
-        <UsageCount Value="23"/>
-        <DefaultSyntaxHighlighter Value="Delphi"/>
+        <UsageCount Value="189"/>
       </Unit>
       <Unit>
         <Filename Value="VCL/Mixers.pas"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="316"/>
-        <CursorPos X="3" Y="334"/>
-        <UsageCount Value="23"/>
-        <DefaultSyntaxHighlighter Value="Delphi"/>
+        <EditorIndex Value="9"/>
+        <TopLine Value="222"/>
+        <CursorPos Y="254"/>
+        <UsageCount Value="189"/>
+        <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="VCL/VolumCtl.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
-        <UsageCount Value="23"/>
-        <DefaultSyntaxHighlighter Value="Delphi"/>
+        <UsageCount Value="189"/>
       </Unit>
       <Unit>
         <Filename Value="VCL/VolmSldr.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
-        <UsageCount Value="23"/>
-        <DefaultSyntaxHighlighter Value="Delphi"/>
+        <UsageCount Value="189"/>
       </Unit>
       <Unit>
         <Filename Value="VCL/WavFile.pas"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="609"/>
-        <CursorPos X="14" Y="634"/>
-        <UsageCount Value="23"/>
-        <DefaultSyntaxHighlighter Value="Delphi"/>
+        <EditorIndex Value="10"/>
+        <CursorPos X="75" Y="21"/>
+        <UsageCount Value="189"/>
+        <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="Main.lfm"/>
         <HasResources Value="True"/>
-        <CursorPos X="127" Y="24"/>
-        <UsageCount Value="10"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="1220"/>
+        <CursorPos X="48" Y="1261"/>
+        <UsageCount Value="92"/>
         <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="LFM"/>
       </Unit>
+      <Unit>
+        <Filename Value="/usr/local/share/fpcsrc/rtl/wince/messages.pp"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="5" Y="11"/>
+        <UsageCount Value="21"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/Applications/Lazarus/lcl/interfaces/cocoa/cocoaobject.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="49"/>
+        <CursorPos Y="77"/>
+        <UsageCount Value="19"/>
+      </Unit>
+      <Unit>
+        <Filename Value="ScoreDlg.dfm"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="2"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/Applications/Lazarus/lcl/interfaces/cocoa/interfaces.pas"/>
+        <UnitName Value="Interfaces"/>
+        <EditorIndex Value="14"/>
+        <CursorPos X="18" Y="30"/>
+        <UsageCount Value="51"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/Applications/Lazarus/lcl/interfaces/cocoa/cocoawsmenus.pas"/>
+        <UnitName Value="CocoaWSMenus"/>
+        <EditorIndex Value="15"/>
+        <TopLine Value="43"/>
+        <CursorPos X="70" Y="71"/>
+        <UsageCount Value="51"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/Applications/Lazarus/lcl/include/application.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="837"/>
+        <CursorPos X="20" Y="865"/>
+        <UsageCount Value="4"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/Applications/Lazarus/lcl/checklst.pas"/>
+        <UnitName Value="CheckLst"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="311"/>
+        <CursorPos X="23" Y="339"/>
+        <UsageCount Value="4"/>
+      </Unit>
     </Units>
-    <JumpHistory>
+    <JumpHistory HistoryIndex="29">
       <Position>
-        <Filename Value="Main.lfm"/>
-        <Caret Line="24" Column="127"/>
+        <Filename Value="Main.pas"/>
+        <Caret Line="324" TopLine="293"/>
+      </Position>
+      <Position>
+        <Filename Value="VCL/SndCustm.pas"/>
+        <Caret Line="255" TopLine="230"/>
+      </Position>
+      <Position>
+        <Filename Value="VCL/SndCustm.pas"/>
+        <Caret Line="364" Column="82" TopLine="351"/>
+      </Position>
+      <Position>
+        <Filename Value="VCL/SndCustm.pas"/>
+        <Caret Line="450" TopLine="422"/>
+      </Position>
+      <Position>
+        <Filename Value="VCL/SndCustm.pas"/>
+        <Caret Line="364" TopLine="336"/>
+      </Position>
+      <Position>
+        <Filename Value="VCL/SndCustm.pas"/>
+        <Caret Line="450" TopLine="422"/>
+      </Position>
+      <Position>
+        <Filename Value="VCL/SndCustm.pas"/>
+        <Caret Line="364" Column="73" TopLine="336"/>
+      </Position>
+      <Position>
+        <Filename Value="VCL/SndCustm.pas"/>
+        <Caret Line="365" TopLine="336"/>
+      </Position>
+      <Position>
+        <Filename Value="VCL/SndCustm.pas"/>
+        <Caret Line="364" TopLine="336"/>
+      </Position>
+      <Position>
+        <Filename Value="VCL/SndCustm.pas"/>
+        <Caret Line="367" TopLine="336"/>
+      </Position>
+      <Position>
+        <Filename Value="VCL/SndCustm.pas"/>
+        <Caret Line="364" Column="76" TopLine="345"/>
+      </Position>
+      <Position>
+        <Filename Value="VCL/SndCustm.pas"/>
+        <Caret Line="137" Column="31" TopLine="118"/>
+      </Position>
+      <Position>
+        <Filename Value="VCL/SndCustm.pas"/>
+        <Caret Line="289" Column="50" TopLine="250"/>
+      </Position>
+      <Position>
+        <Filename Value="VCL/SndCustm.pas"/>
+        <Caret Line="200" Column="2" TopLine="174"/>
+      </Position>
+      <Position>
+        <Filename Value="VCL/SndCustm.pas"/>
+        <Caret Line="115" Column="25" TopLine="76"/>
+      </Position>
+      <Position>
+        <Filename Value="VCL/SndCustm.pas"/>
+        <Caret Line="112" Column="20" TopLine="78"/>
+      </Position>
+      <Position>
+        <Filename Value="VCL/SndCustm.pas"/>
+        <Caret Line="115" Column="3" TopLine="87"/>
+      </Position>
+      <Position>
+        <Filename Value="VCL/SndCustm.pas"/>
+        <Caret Line="116" Column="4" TopLine="88"/>
+      </Position>
+      <Position>
+        <Filename Value="VCL/SndCustm.pas"/>
+        <Caret Line="117" Column="3" TopLine="107"/>
+      </Position>
+      <Position>
+        <Filename Value="VCL/SndCustm.pas"/>
+        <Caret Line="135" Column="3" TopLine="107"/>
+      </Position>
+      <Position>
+        <Filename Value="VCL/SndCustm.pas"/>
+        <Caret Line="271" TopLine="243"/>
+      </Position>
+      <Position>
+        <Filename Value="VCL/SndCustm.pas"/>
+        <Caret Line="73" Column="71"/>
+      </Position>
+      <Position>
+        <Filename Value="VCL/SndCustm.pas"/>
+        <Caret Line="291" Column="42" TopLine="259"/>
+      </Position>
+      <Position>
+        <Filename Value="VCL/SndCustm.pas"/>
+        <Caret Line="292" TopLine="265"/>
+      </Position>
+      <Position>
+        <Filename Value="VCL/SndCustm.pas"/>
+        <Caret Line="222" Column="15" TopLine="198"/>
+      </Position>
+      <Position>
+        <Filename Value="VCL/SndCustm.pas"/>
+        <Caret Line="223" Column="62" TopLine="202"/>
+      </Position>
+      <Position>
+        <Filename Value="VCL/SndCustm.pas"/>
+        <Caret Line="237" Column="35" TopLine="209"/>
+      </Position>
+      <Position>
+        <Filename Value="VCL/SndCustm.pas"/>
+        <Caret Line="233" Column="33" TopLine="209"/>
+      </Position>
+      <Position>
+        <Filename Value="VCL/SndCustm.pas"/>
+        <Caret Line="237" Column="29" TopLine="209"/>
+      </Position>
+      <Position>
+        <Filename Value="VCL/SndCustm.pas"/>
+        <Caret Line="236" Column="65" TopLine="108"/>
       </Position>
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>
-      <Modes ActiveMode=""/>
+      <Modes ActiveMode="default">
+        <Mode Name="default">
+          <local>
+            <LaunchingApplication Use="True"/>
+          </local>
+        </Mode>
+      </Modes>
     </RunParams>
+    <HistoryLists>
+      <List Name="LaunchingApplication" Type="File" Count="1">
+        <Item1 Value="/bin/sh"/>
+      </List>
+    </HistoryLists>
   </ProjectSession>
+  <Debugging>
+    <BreakPoints>
+      <Item>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="VCL/SndCustm.pas"/>
+        <Line Value="186"/>
+      </Item>
+      <Item>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="VCL/SndCustm.pas"/>
+        <Line Value="287"/>
+      </Item>
+    </BreakPoints>
+  </Debugging>
 </CONFIG>

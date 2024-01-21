@@ -11,7 +11,7 @@ interface
 
 uses
   LCLIntf, LCLType, LMessages, Messages, SysUtils, Classes, Graphics, Controls, Forms, Dialogs,
-  BaseComp, SndTypes, SndCustm, Math, sdl;
+  BaseComp, SndTypes, SndCustm, Math, portaudio;
 
 type
   TAlSoundOut = class(TCustomSoundInOut)
@@ -71,8 +71,6 @@ end;
 
 
 
-
-
 //------------------------------------------------------------------------------
 //                               start/stop
 //------------------------------------------------------------------------------
@@ -85,7 +83,7 @@ begin
   Writeln('SoundOut.Start');
   CheckErr;
 
-   SDL_PauseAudio(0);
+//   SDL_PauseAudio(0);
    
   //send all buffers to the player
   if Assigned(FOnBufAvailable) then
@@ -105,19 +103,13 @@ begin
   //rc := waveOutReset(DeviceHandle);
   Writeln('SoundOut.Stop');
   CheckErr;
-
-   SDL_PauseAudio(1);
+   Pa_StopStream(Stream);
    
   for i:=0 to Length(Buffers)-1 do Unprepare(@Buffers[i]);
   //close device
   //rc := waveOutClose(DeviceHandle);
   CheckErr;
 end;
-
-
-
-
-
 
 
 
@@ -130,9 +122,11 @@ begin
      //if (Buffers[i].Hdr.dwFlags and (WHDR_INQUEUE or WHDR_PREPARED)) = 0 thne
   if (Buffers[0].used = 0) then
     begin Result := @Buffers[0]; Exit; end;
-
-  //Result := nil;
-  Err('Output buffers full');
+  // workaround
+   Buffers[0].used := 0;
+    Result := @Buffers[0];
+//  Result := nil;
+ // Err('Output buffers full');
 
 end;
 
@@ -158,13 +152,10 @@ begin
   Result := Buf <> nil;
   if not Result then Exit;
 
-  //data to buffer  (Single -> SmallInt)
   Buf.Data := nil;
   SetLength(Buf.Data, Length(Data));
   for i:=0 to High(Data) do
     Buf.Data[i] := Max(-32767, Min(32767, Round(Data[i])));
-
-  //Writeln('PutData ', High(Data), ' ', Length(Data));
 
   Buf.len := Length(Data);
   Buf.used := 1;
@@ -187,9 +178,6 @@ begin
 
    Inc(FBufsAdded);
 end;
-
-
-
 
 
 //------------------------------------------------------------------------------
