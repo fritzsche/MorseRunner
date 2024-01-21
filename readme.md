@@ -10,3 +10,4 @@ Also several known bugys.
 To compile the project you need Lazarus Pascal and need to install Portaudio library via homwbrew.
 At this early stage binary executables are not yet provided.
 
+Please check the original documentation in file Readme.txt. 
