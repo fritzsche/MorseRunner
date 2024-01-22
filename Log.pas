@@ -67,12 +67,12 @@ begin
 
   if Ini.RunMode = rmHst then Empty := '' else Empty := '0';
 
-  //MainForm.ListView1.Items[0].SubItems[0] := Empty;
-  //MainForm.ListView1.Items[1].SubItems[0] := Empty;
-  //MainForm.ListView1.Items[0].SubItems[1] := Empty;
-  //MainForm.ListView1.Items[1].SubItems[1] := Empty;
-  //MainForm.ListView1.Items[2].SubItems[0] := '0';
-  //MainForm.ListView1.Items[2].SubItems[1] := '0';
+  MainForm.ListView1.Items[0].SubItems[0] := Empty;
+  MainForm.ListView1.Items[1].SubItems[0] := Empty;
+  MainForm.ListView1.Items[0].SubItems[1] := Empty;
+  MainForm.ListView1.Items[1].SubItems[1] := Empty;
+  MainForm.ListView1.Items[2].SubItems[0] := '0';
+  MainForm.ListView1.Items[2].SubItems[1] := '0';
 
   MainForm.PaintBox1.Invalidate;
 end;
@@ -132,12 +132,12 @@ begin
   for i:=0 to High(QsoList) do PfxList.Add(QsoList[i].Pfx);
   Mul := PfxList.Count;
 
-  //MainForm.ListView1.Items[0].SubItems[0] := IntToStr(Pts);
-  //MainForm.ListView1.Items[1].SubItems[0] := IntToStr(Mul);
-  //MainForm.ListView1.Items[2].SubItems[0] := IntToStr(Pts*Mul);
+  MainForm.ListView1.Items[0].SubItems[0] := IntToStr(Pts);
+  MainForm.ListView1.Items[1].SubItems[0] := IntToStr(Mul);
+  MainForm.ListView1.Items[2].SubItems[0] := IntToStr(Pts*Mul);
 
   // Used in placed of ListView1, as there are layout problems with the Form
-  MainForm.LabelScoreRaw.Caption := 'Raw ' + IntToStr(Pts) + ' / ' + IntToStr(Mul) + ' / ' + IntToStr(Pts*Mul);
+//  MainForm.LabelScoreRaw.Caption := 'Raw ' + IntToStr(Pts) + ' / ' + IntToStr(Mul) + ' / ' + IntToStr(Pts*Mul);
   
   //verified
 
@@ -151,12 +151,12 @@ begin
     end;
   Mul := PfxList.Count;
 
-  //MainForm.ListView1.Items[0].SubItems[1] := IntToStr(Pts);
-  //MainForm.ListView1.Items[1].SubItems[1] := IntToStr(Mul);
-  //MainForm.ListView1.Items[2].SubItems[1] := IntToStr(Pts*Mul);
+  MainForm.ListView1.Items[0].SubItems[1] := IntToStr(Pts);
+  MainForm.ListView1.Items[1].SubItems[1] := IntToStr(Mul);
+  MainForm.ListView1.Items[2].SubItems[1] := IntToStr(Pts*Mul);
 
   // Used in placed of ListView1, as there are layout problems with the Form
-  MainForm.LabelScoreVer.Caption := 'Ver ' + IntToStr(Pts) + ' / ' + IntToStr(Mul) + ' / ' + IntToStr(Pts*Mul);
+//  MainForm.LabelScoreVer.Caption := 'Ver ' + IntToStr(Pts) + ' / ' + IntToStr(Mul) + ' / ' + IntToStr(Pts*Mul);
   
   MainForm.PaintBox1.Invalidate;
 end;

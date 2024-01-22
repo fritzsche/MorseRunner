@@ -199,8 +199,6 @@ type
     HSTCompetition1: TMenuItem;
     HSTCompetition2: TMenuItem;
     Panel11: TPanel;
-    LabelScoreRaw: TLabel;
-    LabelScoreVer: TLabel;
     ListView1: TListView;
     Operator1: TMenuItem;
     procedure FormCreate(Sender: TObject);
@@ -337,6 +335,29 @@ begin
   //  Left = 384
   //  Top = 204
   //end
+
+  // Add entries for Scores
+  MainForm.ListView1.Items.Add;// Pts
+  MainForm.ListView1.Items.Add;// Mult
+  MainForm.ListView1.Items.Add;// Score
+
+  MainForm.ListView1.Items[0].Caption := 'Pts';
+  MainForm.ListView1.Items[0].SubItems.Add('');
+  MainForm.ListView1.Items[0].SubItems.Add('');
+
+
+
+  MainForm.ListView1.Items[1].Caption := 'Mult';
+  MainForm.ListView1.Items[1].SubItems.Add('');
+  MainForm.ListView1.Items[1].SubItems.Add('');
+
+
+  MainForm.ListView1.Items[2].Caption := 'Score';
+  MainForm.ListView1.Items[2].SubItems.Add('0');
+  MainForm.ListView1.Items[2].SubItems.Add('0');
+
+
+
 
   AlWavFile1 := TAlWavFile.Create(self);
 
