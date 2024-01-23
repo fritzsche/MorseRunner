@@ -127,7 +127,7 @@ begin
    while not Terminated do
       begin
 	 Synchronize(ProcessEvent);
-	 Sleep(10);
+	 Sleep(30);
       end;
 end;
 

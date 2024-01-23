@@ -6,12 +6,12 @@ interface
 
 uses
   LCLIntf, LCLType, LMessages, Messages, SysUtils, Classes, Graphics, Controls, Forms, Dialogs,
-  Math, PermHint;
+  Math ;//, PermHint;
 
 type
   TVolumeSlider = class(TGraphicControl)
   private
-    FHintWin: TPermanentHintWindow;
+//    FHintWin: TPermanentHintWindow;
     FMargin: integer;
     FValue: Single;
     FOnChange: TNotifyEvent;
@@ -81,7 +81,7 @@ begin
   Width := 60;
   Height := 20;
   ControlStyle := [csCaptureMouse, csClickEvents, csDoubleClicks, csOpaque];
-  FHintWin := TPermanentHintWindow.Create(Self);
+//  FHintWin := TPermanentHintWindow.Create(Self);
   FShowHint := true;
 
   FDbMax := 0;
@@ -106,13 +106,20 @@ var
 begin
   Bmp := TBitMap.Create;
   try
+    // Bugfix: original author used "with Bmp.Canvas" too early and
+    // mixed Width/Height. Maybe it was ok for Delfi but not for
+    // Lazarus
+    Bmp.Width := Width;
+    Bmp.Height := Height;
     with Bmp.Canvas do
       begin
-      Bmp.Width := Width;
-      Bmp.Height := Height;
       //background
-      Brush.Color := clBtnFace;
-      FillRect(Rect(0, 0, Width, Height));
+      // Like to set the background of the TPanel in background
+      // use parent Background color, just a little different.
+      Brush.Color := parent.Color;
+
+
+      FillRect(Rect(0, 0, Bmp.Width, Bmp.Height));
       //triangle
       Pen.Color := clWhite;
       MoveTo(FMargin, Height-VMargin);
@@ -178,9 +185,9 @@ begin
     MouseCapture := false;
     end;
 
-  if (PtInRect(ClientRect, POINT(X,Y)) or (csClicked in ControlState)) and FShowHint
-    then FHintWin.ShowHint(Hint)
-    else FHintWin.HideHint;
+//  if (PtInRect(ClientRect, POINT(X,Y)) or (csClicked in ControlState)) and FShowHint
+//    then FHintWin.ShowHint(Hint)
+//    else FHintWin.HideHint;
 
   if not (csClicked in ControlState) then Exit;
 
@@ -201,8 +208,8 @@ end;
 
 procedure TVolumeSlider.CMMouseLeave(var Message: TMessage);
 begin
-  if not (csClicked in ControlState)
-    then FHintWin.HideHint;
+//  if not (csClicked in ControlState)
+//    then FHintWin.HideHint;
 end;
 
 procedure TVolumeSlider.SetShowHint(const Value: boolean);
@@ -240,7 +247,7 @@ end;
 procedure TVolumeSlider.MouseUp(Button: TMouseButton; Shift: TShiftState;
   X, Y: Integer);
 begin
-  FHintWin.HideHint;
+//  FHintWin.HideHint;
   inherited;
 end;
 

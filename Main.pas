@@ -327,15 +327,29 @@ begin
   //end
 
   VolumeSlider1:= TVolumeSlider.Create(self);
+  VolumeSlider1.Left := 87;
+  VolumeSlider1.Top := 118;
+  VolumeSlider1.Width := 60;
+  VolumeSlider1.Height := 20;
+
   VolumeSlider1.Value := 0.75;
   VolumeSlider1.OnChange := VolumeSlider1Change;
   VolumeSlider1.DbScale := 60;
   VolumeSlider1.Db := -15;
+  VolumeSlider1.ShowHint := True;
+  VolumeSlider1.Margin := 5;
+  VolumeSlider1.Overloaded := False;
+  VolumeSlider1.parent := GroupBox1;
+
+  //GroupBox1.AddControl(VolumeSlider1);
   //object AlWavFile1: TAlWavFile
   //  Left = 384
   //  Top = 204
   //end
 
+  // TODO: Remove Extra Margin added
+  // by MacOS
+  // https://forum.lazarus.freepascal.org/index.php?topic=58260.0
   // Add entries for Scores
   MainForm.ListView1.Items.Add;// Pts
   MainForm.ListView1.Items.Add;// Mult
