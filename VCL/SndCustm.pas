@@ -126,8 +126,16 @@ procedure TWaitThread.Execute;
 begin
    while not Terminated do
       begin
-	 Synchronize(ProcessEvent);
-	 Sleep(30);
+      // Fix: original code checked this in main thread.
+      // however this lead to high load on main thead just
+      // to check if a new buffer is needed. Check this now in wait thread
+      // accessing via Owner component, but is checking integer that should
+      // ok. Test showed no problem.
+         if (Owner.Buffers[0].used = 0) then
+         begin
+	    Synchronize(ProcessEvent);
+         end;
+         Sleep(10);
       end;
 end;
 
