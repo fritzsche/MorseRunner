@@ -108,10 +108,6 @@
         <IsPartOfProject Value="True"/>
       </Unit>
       <Unit>
-        <Filename Value="VCL/PermHint.pas"/>
-        <IsPartOfProject Value="True"/>
-      </Unit>
-      <Unit>
         <Filename Value="VCL/Crc32.pas"/>
         <IsPartOfProject Value="True"/>
       </Unit>
@@ -155,13 +151,17 @@
         <Filename Value="VCL/WavFile.pas"/>
         <IsPartOfProject Value="True"/>
       </Unit>
+      <Unit>
+        <Filename Value="portaudio.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
     </Units>
   </ProjectOptions>
   <CompilerOptions>
     <Version Value="11"/>
     <SearchPaths>
       <IncludeFiles Value="VCL;$(ProjOutDir)"/>
-      <Libraries Value="/usr/local/Cellar/portaudio/19.7.0/lib/"/>
+      <Libraries Value="/usr/local/lib/"/>
       <OtherUnitFiles Value="VCL"/>
       <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)"/>
     </SearchPaths>
