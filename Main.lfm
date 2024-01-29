@@ -360,8 +360,8 @@ object MainForm: TMainForm
       Left = 74
       Height = 39
       Top = 58
-      Width = 371
-      Caption = 'Mac Morse Runner 0.9'
+      Width = 294
+      Caption = 'Morse Runner 0.9'
       Font.CharSet = ANSI_CHARSET
       Font.Color = 12369084
       Font.Height = -35
@@ -373,8 +373,8 @@ object MainForm: TMainForm
       Left = 69
       Height = 39
       Top = 54
-      Width = 371
-      Caption = 'Mac Morse Runner 0.9'
+      Width = 294
+      Caption = 'Morse Runner 0.9'
       Font.CharSet = ANSI_CHARSET
       Font.Color = clAqua
       Font.Height = -35
@@ -386,8 +386,8 @@ object MainForm: TMainForm
       Left = 68
       Height = 39
       Top = 53
-      Width = 371
-      Caption = 'Mac Morse Runner 0.9'
+      Width = 294
+      Caption = 'Morse Runner 0.9'
       Font.CharSet = ANSI_CHARSET
       Font.Color = clGreen
       Font.Height = -35
@@ -431,8 +431,8 @@ object MainForm: TMainForm
       Left = 104
       Height = 13
       Top = 120
-      Width = 213
-      Caption = 'Mac Port 2024 Thomas Fritzsche, DJ1TF'
+      Width = 244
+      Caption = 'Mac/Linux Port 2024 Thomas Fritzsche, DJ1TF'
     end
   end
   object Panel9: TPanel

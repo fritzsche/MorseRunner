@@ -776,10 +776,10 @@ const
   Msg = 'CW CONTEST SIMULATOR'#13#13 +
         'Copyright (c) 2004-2006 Alex Shovkoplyas, VE3NEA'#13#13 +
         'Portions Copyright (c) 2022 Zach Metzinger, N0ZGO'#13#13 +
-        'Mac Port Copyright (c) 2024 Thomas Fritzsche, DJ1TF'#13#13 +
+        'Mac/Linux Port Copyright (c) 2024 Thomas Fritzsche, DJ1TF'#13#13 +
         've3nea@dxatlas.com, n0zgo@pobox.com,tf@noto.de'#13;
 begin
-  Application.MessageBox(Msg, 'Mac Morse Runner 0.9', MB_OK or MB_ICONINFORMATION);
+  Application.MessageBox(Msg, 'Mac/Linux Morse Runner 0.9', MB_OK or MB_ICONINFORMATION);
 end;          
 
 

@@ -1,4 +1,4 @@
-# Mac MorseRunner
+# Mac/Linux Morse Runner
 
 * This version of MorseRunner is a Mac port by Thomas Fritzsche DJ1TF.
 * Original Version was created by Alex Shokoplyas VE3NEA.

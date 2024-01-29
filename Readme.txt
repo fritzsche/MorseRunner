@@ -1,4 +1,4 @@
-                              MAC MORSE RUNNER  0.9
+                              MAC / LINUX MORSE RUNNER  0.9
 
                               Contest Simulator
 
