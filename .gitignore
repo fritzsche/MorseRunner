@@ -4,3 +4,4 @@ lib
 sdl_example/example
 *.core
 .DS_STORE
+*.lps

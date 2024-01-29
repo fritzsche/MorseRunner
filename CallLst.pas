@@ -106,7 +106,7 @@ function PickCall: string;
 var
   Idx: integer;
 begin
-  if Calls.Count = 0 then begin Result := 'P29SX'; Exit; end;
+  if Calls.Count = 0 then begin Result := 'DJ1TF'; Exit; end;
 
   Idx := Random(Calls.Count);
   Result := Calls[Idx];
